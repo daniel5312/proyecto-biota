@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./home.css"> <!-- Enlace a archivo CSS externo -->
+    <title>Home</title>
+</head>
+<body>
+    <header class="bg-success text-white text-center py-3"> <!-- Estilos Bootstrap para el header -->
+       
+        <nav class="container d-flex justify-content-between align-items-center"> <!-- Flexbox para navegación -->
+            <a href="./index.html"> 
+                <img src="./assets/img/icons/Captura desde 2024-05-11 19-20-28.png" alt="Logo BIOTA" class="rounded-circle" width="70" height="70"> <!-- Logo redondeado -->
+            </a>
+            <img src="./assets/img/icons/icon_menu.svg" alt="" class="menu">
+            <div class="navbar-left">
+                <ul class="nav"><!-- Clases Bootstrap para navegación -->
+                    <li class="nav-item"><a class="nav-link text-white" href="./home.html">home</a></li> <!-- Enlace Inicio -->
+                    <li class="nav-item"><a class="nav-link text-white" href="./productos.html">Productos</a></li> <!-- Enlace Productos -->
+                    <li class="nav-item"><a class="nav-link text-white" href="./productores.html">Productores y Fincas</a></li> <!-- Enlace Productores y Fincas -->
+                    <li class="nav-item"><a class="nav-link text-white" href="./tienda.html">Tienda-ecommerce</a></li> <!-- enlace ecommerce -->
+
+                    <li class="nav-item"><a class="nav-link text-white" href="./Blogs.html">blogs</a></li> <!-- Enlace Perfil -->
+                </ul>
+            </div> 
+                
+            <div class="navbar-right">
+                <ul>
+                    <li class="navbar-email">biota@example.com</li>
+                    <li class="navbar-shopping-cart">
+                        <img src="./assets/img/icons/icon_shopping_cart_notification.svg" alt="shopping cart">
+                    </li>
+                </ul>
+            </div>
+                
+            
+            <div class="desktop-menu inactive">
+    
+                <ul>
+                    <li>
+                        <a href="./">My orders</a>
+                    </li>
+            
+                    <li>
+                        <a href="/">My accountt</a>
+                    </li>
+            
+                    <li>
+                        <a href="/">Sign out</a>
+                    </li>
+                </ul>   
+            </div>
+            <div class="mobile-menu  inactive">
+                <ul>
+                  <li>
+                    <a href="./home.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="./productos.html">Productos</a>
+                  </li>
+                  <li>
+                    <a href="./productores.html">Productores y Fincas</a>
+                  </li>
+                  <li>
+                    <a href="./tienda.html">Tienda-ecommerce</a>
+                  </li>
+                  <li>
+                    <a href="Blogs.html">Blogs</a>
+                  </li>
+                  <li>
+                    <a href="./cursos.html">Cursos y Talleres</a>
+                  </li>
+                  <li>
+                    <a href="/">Other</a>
+                  </li>
+            
+                
+                  <li>
+                    <a href="/">My orders</a>
+                  </li>
+                  <li>
+                    <a href="/">My account</a>
+                  </li>
+                
+                  <li>
+                    <a href="/" class="email">biota@example.com</a>
+                  </li>
+                  <li>
+                    <a href="/" class="sign-out">Sign out</a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+        <aside class="product-detail inactive">
+          <div class="title-container">
+            <img src="./assets/img/icons/flechita.svg" alt="arrow">
+            <p class="title">My order</p>
+          </div>
+      
+          <div class="my-order-content">
+            <div class="shopping-cart">
+              <figure>
+                <img src="./assets/img/Aguacate.jpg" alt="Aguacate">
+              </figure>
+              <p>Aguacate</p>
+              <p>$5.000</p>
+              <img src="./assets/img/icons/icon_shopping_cart.svg" alt="close">
+            </div>
+      
+            <div class="shopping-cart">
+              <figure>
+                <img src="./assets/img/Lechuga crespa.jpeg" alt="Lechuga">
+              </figure>
+              <p>Lechuga</p>
+              <p>$3.000</p>
+              <img src="./assets/img/icons/icon_shopping_cart.svg" alt="close">
+            </div>
+      
+            <div class="shopping-cart">
+              <figure>
+                <img src="./assets/img/Papa capira.jpg" alt="Papa">
+              </figure>
+              <p>Papa capira</p>
+              <p>$30.000</p>
+              <img src="./assets/img/icons/icon_shopping_cart_notification.svg" alt="close">
+            </div>
+      
+            <div class="order">
+              <p>
+                <span>Total</span>
+              </p>
+              <p>$560.00</p>
+            </div>
+      
+            <button class="primary-button">
+              Checkout
+            </button>
+          </div>
+        </div>
+      </aside>
+    </header>
+
+    <main class="container my-5"> <!-- Estilos Bootstrap para el contenido principal -->
+        <section class="text-center mb-5"> <!-- Sección de bienvenida -->
+            <h1>Bienvenido a BIOTA Orgánicos</h1>
+            <p>Descubre una variedad de productos agrícolas orgánicos y regenerativos directamente de los productores.</p>
+        </section>
+
+        <section id="product-catalogo" class="row"> <!-- Grid de Bootstrap para catálogo de productos -->
+            <!-- Aquí se mostrará el catálogo de productos -->
+        </section>
+
+        <!-- Sección adicional 1 -->
+        <section class="row my-5">
+            <div class="col-md-4 mb-4">
+                <img src="./assets/img/pexels-photo-5425795.jpeg" alt="Producto 1" class="img-fluid rounded"> <!-- Imagen redondeada y responsiva -->
+                <p class="text-center">productos.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="./assets/img/pexels-photo-7728016.jpeg" alt="Producto 2" class="img-fluid rounded">
+                <p class="text-center"> productores</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="./assets/img/pexels-photo-5231186.jpeg" alt="Producto 3" class="img-fluid rounded">
+                <p class="text-center">Cursos y Talleres</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3"> <!-- Footer con Bootstrap -->
+        <p>2024 BIOTA Orgánicos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> <!-- Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+</body>
+</html>

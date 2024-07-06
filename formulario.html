@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Biota</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario Biota</h1>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="segundoNombre">Segundo Nombre:</label>
+                <input type="text" id="segundoNombre" name="segundoNombre">
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="segundoApellido">Segundo Apellido:</label>
+                <input type="text" id="segundoApellido" name="segundoApellido">
+            </div>
+            <div class="form-group">
+                <label for="numeroDocumento">Número de Identificación:</label>
+                <input type="number" id="numeroDocumento" name="numeroDocumento" required>
+            </div>
+            <div class="form-group">
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="F">Femenino</option>
+                    <option value="M">Masculino</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tipoUsuario">Tipo de Usuario:</label>
+                <select id="tipoUsuario" name="tipoUsuario" required>
+                    <option value="1">Productores</option>
+                    <option value="2">Consumidor</option>
+                    <option value="3">Reteals</option>
+                </select>
+            </div>
+            <div id="productoresFields" class="hidden">
+                <div class="form-group">
+                    <label for="departamento">Departamento:</label>
+                    <input type="text" id="departamento" name="departamento">
+                </div>
+                <div class="form-group">
+                    <label for="municipio">Municipio:</label>
+                    <input type="text" id="municipio" name="municipio">
+                </div>
+                <div class="form-group">
+                    <label for="vereda">Vereda:</label>
+                    <input type="text" id="vereda" name="vereda">
+                </div>
+                <div class="form-group">
+                    <label for="predio">Predio:</label>
+                    <input type="text" id="predio" name="predio">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="productos">Productos:</label>
+                    <input type="text" id="productos" name="productos">
+                </div>
+            </div>
+            <div id="consumidorFields" class="hidden">
+                <div class="form-group">
+                    <label for="consumidorMunicipio">Municipio:</label>
+                    <input type="text" id="consumidorMunicipio" name="consumidorMunicipio">
+                </div>
+                <div class="form-group">
+                    <label for="consumidorDireccion">Dirección:</label>
+                    <input type="text" id="consumidorDireccion" name="consumidorDireccion">
+                </div>
+                <div class="form-group">
+                    <label for="barrio">Barrio:</label>
+                    <input type="text" id="barrio" name="barrio">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="consumidorTelefono">Teléfono:</label>
+                    <input type="tel" id="consumidorTelefono" name="consumidorTelefono">
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">WhatsApp:</label>
+                    <input type="tel" id="whatsapp" name="whatsapp">
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
