@@ -171,6 +171,7 @@ inactive {
     font-size: var(--sm);
     color: var(--white) !important;
 }
+
 /*menu de carrito*/
 .product-detail {
     background-color: var(--white);
@@ -254,6 +255,88 @@ inactive {
   font-weight: bold;
   height: 50px;
 }
+/*aca va el estilo de la descripcion de los productos*/
+.product-detail-description {
+  width: 360px;
+  height: 550px;
+  padding-bottom: 24px;
+  position: absolute;
+  right: 50px;
+  border-radius: 8px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.product-detail-close {
+  background: var(--white);
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+  padding: 12px;
+  border-radius: 50%;
+}
+.product-detail-close:hover {
+  cursor: pointer;
+}
+.product-detail-description > img:nth-child(2) {
+  width: 300px;
+  height: 3o0px;
+  object-fit: cover;
+  border-radius:20px;
+  
+  border: solid 1px rgba(0, 0, 0, 0.5);
+}
+.product-detail-description .product-info {
+  margin: 24px 24px 0 24px;
+}
+.product-detail-description .product-info p:nth-child(1) {
+  font-weight: bold;
+  font-size: var(--md);
+  margin-top: 0;
+  margin-bottom: 4px;
+  position: absolute;
+  top: 38%;
+}
+.product-detail-description .product-info p:nth-child(2) {
+  color: var(--very-light-pink);
+  font-size: var(--md);
+  margin-top: 0;
+  margin-bottom: 36px;
+  position: absolute;
+
+}
+.product-detail-description .product-info p:nth-child(3) {
+  color: var(--hospital-green);
+  font-size: var(--sm);
+  margin-top: 0;
+  margin-bottom: 36px;
+  position: absolute;
+  top: 50%;
+  
+}
+.product-detail-description .primary-button {
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 50px;
+  position: absolute;
+  top: 90%;
+  right: 0px;
+  
+}
+.add-to-cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*estilos de las cars de los productos*/
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 240px);
@@ -301,17 +384,17 @@ main {
 }
 
 /* Estilos para las secciones del catálogo de productos */
-#product-catalogo .row {
+.product-catalogo .row {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan */
     justify-content: center; /* Centra los elementos dentro del contenedor */
 }
 
-#product-catalogo .col-md-4 {
+.product-catalogo .col-md-4 {
     padding: 15px; /* Espaciado interno de las columnas */
 }
 
-#product-catalogo img {
+.product-catalogo img {
     width: 100%;
     height: auto; /* Asegura que las imágenes sean responsivas */
     border-radius: 8px; /* Bordes redondeados para las imágenes */
