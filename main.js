@@ -6,6 +6,7 @@ const menuCarritoIcon = document.querySelector('.navbar-shopping-cart');
 const aside = document.querySelector('.product-detail');
 const cardsContainer = document.querySelector(".cards-container");
 
+
 menuEmail.addEventListener('click', toggleDesktopMenu);
 menuHamIcon.addEventListener('click', toggleMobileMenu); 
 menuCarritoIcon.addEventListener('click', toggleCarritoAside);
@@ -136,6 +137,7 @@ function renderProducts(array){
   
     const productImg = document.createElement('img');
     productImg.setAttribute('src', product.Image);
+    productImg.addEventListener('click', console.log)
   
     const productInfo = document.createElement('div');
     productInfo.classList.add('product-info');
