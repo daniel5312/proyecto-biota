@@ -281,7 +281,7 @@ aside {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.8);
 }
-#product-detail-close img {
+.product-detail-close img {
   position: absolute;
   top: 4px;
   left: 5px;
@@ -290,6 +290,7 @@ aside {
 }
 .product-detail-close:hover {
   cursor: pointer;
+  position: relative;
 }
 #product-detail > img:nth-child(2) {
   width: 300px;
@@ -306,9 +307,8 @@ aside {
   font-weight: bold;
   font-size: var(--md);
   margin-top: 0;
-  margin-bottom: 4px;
-  position: absolute;
-  top: 42%;
+  margin-bottom: 10px;
+  
 }
 #product-detail .product-info p:nth-child(2) {
   color: var(--very-light-pink);
@@ -325,6 +325,7 @@ aside {
   margin-bottom: 36px;
   position: absolute;
   top: 50%;
+  left: 5px;
   
 }
 #product-detail .primary-button {
